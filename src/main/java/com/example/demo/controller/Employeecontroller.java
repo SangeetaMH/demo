@@ -25,6 +25,7 @@ public class Employeecontroller {
 	@PostMapping("/addemployee")
 	private Employee addEmployeedetails(@RequestBody Employee emp) throws Invaidsalary, Invaliddesignation
 	{
+		System.out.println("hii");
 		return service.addEmployee(emp);
 	}
 //	@GetMapping("")
